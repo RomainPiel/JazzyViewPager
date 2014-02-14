@@ -12,9 +12,13 @@ buildscript {
 }
 apply plugin: 'android-library'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     compile 'com.android.support:support-v4:19.0.+'
-    compile project(':Library:NineOldAndroids:library')
+    compile 'com.nineoldandroids:library:2.4.0'
 }
 
 android {
